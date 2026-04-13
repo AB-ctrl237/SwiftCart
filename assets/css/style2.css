@@ -138,17 +138,7 @@ nav ul li a:hover::after {
   margin-bottom: 15px;
   border-radius: 10px;
 }
-/* .cart-list h3 {
-  text-align: center;
-  position: relative;
-  right: 27rem;
-  top: 1rem;
-}
-.cart-list p {
-  text-align: center;
-  position: relative;
-  top: rem;
-} */
+
 .cart-list img {
   width: 80px;
 }
@@ -189,4 +179,136 @@ nav ul li a:hover::after {
 .filter-buttons button:hover {
   background: #111;
   color: white;
+}
+/* ================= 📱 MOBILE FIX (≤375px) ================= */
+@media (max-width: 375px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo,
+  .logo a {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  /* PRODUCT GRID (SHOP / CATEGORY) */
+  .product-grid {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  /* CARD */
+  .card {
+    width: 100%;
+  }
+
+  /* CART ITEMS */
+  #cart-container {
+    padding: 10px;
+  }
+
+  .cart-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .cart-list img {
+    width: 60px;
+  }
+
+  /* FILTER BUTTONS */
+  .filter-buttons button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  /* PAGE TITLE */
+  .page-title h1 {
+    font-size: 20px;
+    padding: 1rem;
+  }
+}
+
+
+/* ================= 💻 TABLET (≤768px) ================= */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+
+  .cart-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .filter-buttons button {
+    margin: 8px;
+  }
+
+  .page-title h1 {
+    font-size: 24px;
+  }
+}
+
+
+/* ================= 🖥️ SMALL DESKTOP (≤1024px) ================= */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+  }
+
+  .cart-list {
+    padding: 12px;
+  }
+
+  .page-title h1 {
+    font-size: 28px;
+  }
 }

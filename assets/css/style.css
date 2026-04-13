@@ -517,23 +517,214 @@ footer {
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
+/* ========================= */
+/* 📱 MOBILE (up to 375px) */
+/* ========================= */
+@media (max-width: 375px) {
+
+
+    .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+
+  .hero {
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+    justify-content: center;
   }
 
   .hero-text h1 {
-    font-size: 35px;
+    font-size: 24px;
   }
-}
 
-@media (max-width: 500px) {
-  .product-grid {
-    grid-template-columns: 1fr;
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%;
+  }
+
+  .services {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service {
+    width: 100%;
   }
 
   .categories {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .info-container,
+  .review-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info-box,
+  .review-card {
+    width: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .login-container,
+  .Signup-container {
+    width: 90%;
+    left: 5%;
+  }
+
+  /* REVIEWS SECTION */
+  .review-container {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .review-card {
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  /* TOP SELLING TABLE FIX */
+  .top-selling {
+    overflow-x: auto;
+    padding: 20px;
+  }
+
+  .top-selling table {
+    width: 90vmin;
+  }
+
+  .top-selling th,
+  .top-selling td {
+    font-size: 12px;
+    padding:5px;
+    white-space: nowrap;
+  }
+}
+
+
+/* ========================= */
+/* 📲 TABLET (up to 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .hero {
+    padding-left: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%;
+  }
+
+  .services {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .service {
+    width: 45%;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-container,
+  .review-container {
+    flex-wrap: wrap;
+  }
+
+  .info-box,
+  .review-card {
+    width: 45%;
+  }
+
+  .login-container,
+  .Signup-container {
+    width: 70%;
+    left: 15%;
+  }
+}
+/* ========================= */
+/* 💻 DESKTOP (1024px+) */
+/* ========================= */
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .services {
+    gap: 30px;
+  }
+
+  .service {
+    width: 22%;
+  }
+
+  .info-box {
+    width: 30%;
+  }
+
+  .review-card {
+    width: 30%;
   }
 }
