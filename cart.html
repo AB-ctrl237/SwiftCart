@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="assets/css/style2.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo"  onclick="handalsend()">SwiftCart</div>
+  <nav>
+     <ul>
+      <li><a href="indix.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h1 class="cart-title">Your Cart</h1>
+
+<div id="container">
+  <ul id="cart-container">
+
+  </ul>
+</div>
+
+<div class="cart-actions">
+  <button onclick="confirmOrder()">Confirm Order</button>
+  <button onclick="clearCart()">Clear All</button>
+</div>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/cart.js"></script>
+
+</body>
+</html>

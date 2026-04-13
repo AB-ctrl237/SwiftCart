@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftCart</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/media/photo-1491553895911-0055eca6402d__1_-removebg-preview.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar flex">
+      <img
+        src="assets/media/photo-1491553895911-0055eca6402d__1_-removebg-preview.png"
+        class="h-12 w-13 absolute top-3 left-1"
+      />
+      <div class="logo relative right-3">SwiftCart</div>
+      <nav class="flex relative right-20 text-center gap-2">
+        <ul class="relative top-2 right-10">
+          <li><a href="D:\store\indix.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+        <!-- <input
+          type="search"
+          placeholder="Search for products..."
+          class="border rounded-3xl w-85 h-10 text-start relative left-6"
+          id="int"
+        /> -->
+        <div class="flex gap-5 font-normal text-xl p-1 relative left-30">
+          <p class="font-normal text-base relative top-1" id="user"></p>
+          <a href="cart.html">
+            <i
+              class="fa-brands fa-opencart text-orange-400 cursor-pointer relative top-1"
+            ></i
+          ></a>
+          <button
+            type="button"
+            id="loginBtn"
+            class="cursor-pointer border rounded-3xl text-center text-orange-400 text-sm font-bold p-1 hover:bg-orange-400 hover:text-white h-7 w-20"
+          >
+            Login
+          </button>
+
+          <div  id="bbtn">
+            <button
+              type="button"
+              id="SignBtn"
+              class="cursor-pointer rounded-3xl text-center text-sm font-bold p-1 hover:text-orange-400 text-white h-7 w-15"
+            >
+              Sign up
+            </button>
+          </div>
+          <button
+            id="logoutBtn"
+            class="cursor-pointer border rounded-3xl text-center text-orange-400 text-sm font-bold p-1 hover:bg-orange-400 hover:text-white h-7 w-20"
+          >
+            Logout
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero">
+        <!-- login -->
+        <div id="loginBg">
+          <div class="login-container">
+            <h2 class="font-bold text-xl">Login</h2>
+             <div id="error" class="text-red-900 relative top-10"></div>
+            <input type="email" placeholder="Email" class="border logint" />
+            <p id=""></p>
+            <input
+              type="password"
+              placeholder="Password"
+              class="border logint"
+            />
+             <div id="error" class="text-red-900 relative top-10"></div>
+            <button id="logBtn">Login</button>
+          </div>
+        </div>
+        <!-- Sign up -->
+        <div id="SignBg">
+          <div class="Signup-container">
+            <h2 class="font-bold text-xl">Sign up</h2>
+            <div id="error" class="text-red-900 relative top-10"></div>
+            <input
+              type="email"
+              placeholder="Email"
+              class="border SignupInt"
+              required
+            />
+            <input
+              type="text"
+              placeholder="User name"
+              class="border SignupInt"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              class="border SignupInt"
+            />
+            <div id="error" class="text-red-900 relative top-10"></div>
+            <button id="SignupBtn">Sign up</button>
+          </div>
+        </div>
+        <div class="hero-text">
+          <h1>Upgrade Your Lifestyle</h1>
+          <p>Discover premium products at affordable prices</p>
+          <button><a href="D:\store\categories.html">Shop Now </a></button>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about-container">
+          <div class="about-text">
+            <h2>About SwiftCart</h2>
+            <p>
+              SwiftCart is your one-stop destination for modern and affordable
+              products. We aim to provide high-quality items with a seamless
+              shopping experience.
+            </p>
+
+            <p>
+              Our mission is to make online shopping simple, fast, and reliable
+              for everyone.
+            </p>
+
+            <button>Learn More</button>
+          </div>
+
+          <div class="about-image">
+            <img
+              src="assets/media/photo-1555529771-835f59fc5efe.jfif"
+              alt="about"
+              class="h-130"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="service">
+          <h3>🚚 Free Shipping</h3>
+          <p>On all orders above $50</p>
+        </div>
+
+        <div class="service">
+          <h3>💳 Secure Payment</h3>
+          <p>100% secure transactions</p>
+        </div>
+
+        <div class="service">
+          <h3>🔄 Easy Returns</h3>
+          <p>7 days return policy</p>
+        </div>
+
+        <div class="service">
+          <h3>📞 Support</h3>
+          <p>24/7 customer help</p>
+        </div>
+      </section>
+
+      <!-- CATEGORIES -->
+
+      <section class="trending">
+        <h2 class="font-bold text-center text-xl">Products</h2>
+
+        <div class="category-buttons">
+          <button onclick="loadProducts('electronics')" id="electronic-btn">Electronics</button>
+          <button onclick="loadProducts(`men\'s clothing`)">Fashion</button>
+          <button onclick="loadProducts('jewelery')">Accessories</button>
+        </div>
+
+        <div class="product-grid" id="products"></div>
+      </section>
+
+      <!-- promo banner -->
+      <section class="promo">
+        <div class="promo-content">
+          <h2>Big Sale 50% OFF</h2>
+          <p>Limited time offer on all products</p>
+          <button>Shop Now</button>
+        </div>
+      </section>
+
+      <!-- info-section -->
+      <section class="info-section">
+        <h2>Why Choose SwiftCart?</h2>
+
+        <div class="info-container">
+          <div class="info-box">
+            <h3>Fast Delivery</h3>
+            <p>Get your products delivered within 2-3 days.</p>
+          </div>
+
+          <div class="info-box">
+            <h3>Best Quality</h3>
+            <p>We provide only premium quality products.</p>
+          </div>
+
+          <div class="info-box">
+            <h3>24/7 Support</h3>
+            <p>Our team is always ready to help you.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- stats -->
+      <section class="stats">
+        <div class="stat">
+          <h2>10K+</h2>
+          <p>Customers</p>
+        </div>
+
+        <div class="stat">
+          <h2>500+</h2>
+          <p>Products</p>
+        </div>
+
+        <div class="stat">
+          <h2>120+</h2>
+          <p>Brands</p>
+        </div>
+
+        <div class="stat">
+          <h2>24/7</h2>
+          <p>Support</p>
+        </div>
+      </section>
+
+      <!-- reviews -->
+      <section class="reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review-container">
+          <div class="review-card">
+            <p>"Amazing quality! Highly recommended."</p>
+            <h4>- Ali</h4>
+          </div>
+
+          <div class="review-card">
+            <p>"Fast delivery and great service."</p>
+            <h4>- Ahmed</h4>
+          </div>
+
+          <div class="review-card">
+            <p>"Best online shopping experience."</p>
+            <h4>- Sara</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- top-selling item -->
+      <section class="top-selling">
+        <h2>Top Selling Products</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Sales</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Smart Watch</td>
+              <td>Electronics</td>
+              <td>$120</td>
+              <td>1500+</td>
+            </tr>
+
+            <tr>
+              <td>Headphones</td>
+              <td>Electronics</td>
+              <td>$80</td>
+              <td>1200+</td>
+            </tr>
+            <tr>
+              <td>Black T-shirt</td>
+              <td>Fashion</td>
+              <td>$30</td>
+              <td>1000+</td>
+            </tr>
+
+            <tr>
+              <td>Backpack</td>
+              <td>Accessories</td>
+              <td>$60</td>
+              <td>700+</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- newsletter sub -->
+      <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get latest updates and offers</p>
+
+        <div class="newsletter-box">
+          <input type="email" placeholder="Enter your email" />
+          <button type="submit">Subscribe</button>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 SwiftCart. All rights reserved</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>
