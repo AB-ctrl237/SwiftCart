@@ -133,6 +133,7 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   justify-content: space-between; 
+  gap: 4rem;
   background: rgb(216, 215, 215);
   padding: 15px;
   margin-bottom: 15px;
@@ -143,6 +144,36 @@ nav ul li a:hover::after {
   width: 80px;
 }
 
+.plus{
+    border-radius: 50%;
+    background-color: #01010100;
+    padding: 3px 8px;
+    font-size: medium;
+    align-items: center;
+    position: relative;
+    left: 6rem;
+    
+}
+.minus{
+    border-radius: 50%;
+    background-color: #01010100;
+    padding: 3px 8px;
+    font-size: medium;
+    position: relative;
+    left: 18rem;
+}
+.count{
+    padding: 3px 7px;
+    background-color: #949494fa;
+    position: relative;
+    left: 12rem;
+}
+.reset{
+   padding: 3px 6px;
+    background-color: #e6e6e64b;
+    position: relative;
+    
+}
 .qty-btn {
   padding: 5px 10px;
   margin: 0 5px;
@@ -188,12 +219,14 @@ nav ul li a:hover::after {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    font-size: x-small;
   }
 
   .logo,
   .logo a {
-    font-size: 20px;
+     font-size: 20px; 
     margin-bottom: 8px;
+    
   }
 
   nav ul {
