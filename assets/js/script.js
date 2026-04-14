@@ -135,7 +135,7 @@ function renderCart() {
 }
 
 function handalsend() {
-  window.location.href = "indix.html";
+  window.location.href = "index.html";
 }
 // login btn working
 
