@@ -16,9 +16,13 @@ body {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
-  padding: 20px 60px;
+  padding: 15px 60px;
   background: #111;
   color: #fff;
+
+  /* position: sticky;
+  top: 0;
+  z-index: 1000; */
 }
 
 .logo {
@@ -63,6 +67,12 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
   width: 100%;
+}
+#Right-things{
+  display: flex;
+}
+#Right-things button {
+  gap: 1px;
 }
 #loginBg {
   height: 100vmin;
@@ -521,8 +531,27 @@ footer {
 /* 📱 MOBILE (up to 375px) */
 /* ========================= */
 @media (max-width: 375px) {
+.navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: x-small;
+  }
+
+  .logo,
+  .logo a {
+     font-size: 16px; 
+    margin-bottom: 8px;
+    position: relative;
+    right: 5rem;
+    top: 8px;
+  }
 
 
+
+
+
+/* 
     .navbar {
       width: 20px;
     flex-direction: column;
@@ -533,11 +562,10 @@ footer {
   .logo a {
      font-size: 15px; 
     margin-bottom: 8px;
+    
   
-  }
-
- 
-
+  } */
+/* 
   nav ul {
     flex-direction: column;
     width: 100%;
@@ -551,9 +579,40 @@ footer {
 
   nav ul li a {
     font-size: 14px;
+  } */
+
+
+
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    color: #f4f4f4;
+    position: relative;
+    left: 8rem;
   }
 
+  nav ul li {
+    margin: 8px 0;
+  }
 
+  nav ul li a {
+    font-size: 14px;
+  }
+  
+
+  #Right-things{
+   position: relative;
+   top: 1rem;
+ 
+}
+  #Right-things button{
+  
+    text-align: center;
+ flex-direction: row;
+}
   .hero {
     height: auto;
     padding: 30px 20px;
@@ -597,11 +656,12 @@ footer {
   .review-container {
     flex-direction: column;
     gap: 20px;
+    
   }
 
   .info-box,
   .review-card {
-    width: 100%;
+    width: 95%;
   }
 
   .stats {
@@ -694,7 +754,7 @@ footer {
 
   .info-box,
   .review-card {
-    width: 45%;
+    width: 95%;
   }
 
   .login-container,
