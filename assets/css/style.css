@@ -532,6 +532,7 @@ footer {
 /* ========================= */
 @media (max-width: 375px) {
 .navbar {
+    height: 70vh;
     flex-direction: column;
     align-items: center;
     padding: 10px;
@@ -546,11 +547,6 @@ footer {
     right: 5rem;
     top: 8px;
   }
-
-
-
-
-
 /* 
     .navbar {
       width: 20px;
@@ -580,9 +576,6 @@ footer {
   nav ul li a {
     font-size: 14px;
   } */
-
-
-
 
   nav ul {
     flex-direction: column;
@@ -716,6 +709,44 @@ footer {
     padding: 15px 30px;
   }
 
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    color: #f4f4f4;
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+  
+  #Right-things{
+   position: relative;
+   top: 1px;
+   left: 2rem;
+ 
+}
+  #Right-things button{
+  
+    text-align: center;
+ flex-direction: row;
+}
+    .logo,
+  .logo a {
+     font-size: 16px; 
+    margin-bottom: 8px;
+    position: relative;
+    top: 8px;
+    left: 1rem;
+  }
   .hero {
     padding-left: 30px;
   }
