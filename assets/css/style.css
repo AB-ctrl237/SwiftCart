@@ -537,80 +537,7 @@ footer {
 /* 📱 MOBILE (up to 375px) */
 /* ========================= */
 @media (max-width: 376px) {
-/* .navbar {
-    height: 70vh;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    font-size: x-small;
-  }
 
-  .logo,
-  .logo a {
-     font-size: 16px; 
-    margin-bottom: 8px;
-    position: relative;
-    right: 5rem;
-    top: 8px;
-  } */
-/* 
-    .navbar {
-      width: 20px;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-  .logo,
-  .logo a {
-     font-size: 15px; 
-    margin-bottom: 8px;
-    
-  
-  } */
-/* 
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-     text-align: center;
-  }
-
-  nav ul li {
-    margin: 8px 0;
-  }
-
-  nav ul li a {
-    font-size: 14px;
-  } */
-  /* nav ul {
-    flex-direction: row;
-    width: 100%;
-    text-align: center;
-    font-size: x-large;
-    color: #f4f4f4;
-    position: relative;
-    left: 8rem;
-  }
-
-  nav ul li {
-    margin: 8px 0;
-  }
-
-  nav ul li a {
-    font-size: 14px;
-  }
-  
-
-  #Right-things{
-   position: relative;
-   top: 1rem;
- 
-}
-  #Right-things button{
-  
-    text-align: center;
- flex-direction: row;
-} */
   .navbar {
     padding: 15px 30px;
       flex-direction: column;
@@ -645,9 +572,7 @@ footer {
   }
   
   #Right-things{
-   position: relative;
-   top: 1px;
-   left:1000rem;
+  
     margin: 10px 20px;
 }
   #Right-things button{
