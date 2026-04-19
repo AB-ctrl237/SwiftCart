@@ -536,7 +536,7 @@ footer {
 /* ========================= */
 /* 📱 MOBILE (up to 375px) */
 /* ========================= */
-@media (max-width: 378px) {
+@media (max-width: 376px) {
 
   .navbar {
     padding: 15px 30px;
@@ -678,7 +678,7 @@ footer {
 /* ========================= */
 /* 📲 TABLET (up to 768px) */
 /* ========================= */
-@media (max-width: 767px) {
+@media (max-width: 769px) {
 
   .navbar {
     padding: 15px 30px;
