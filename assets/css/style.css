@@ -536,7 +536,7 @@ footer {
 /* ========================= */
 /* 📱 MOBILE (up to 375px) */
 /* ========================= */
-@media (max-width: 376px) {
+@media (max-width: 378px) {
 
   .navbar {
     padding: 15px 30px;
@@ -603,6 +603,7 @@ footer {
   .services {
     flex-direction: column;
     gap: 20px;
+    align-items: center;
   }
 
   .service {
@@ -677,7 +678,7 @@ footer {
 /* ========================= */
 /* 📲 TABLET (up to 768px) */
 /* ========================= */
-@media (max-width: 769px) {
+@media (max-width: 767px) {
 
   .navbar {
     padding: 15px 30px;
