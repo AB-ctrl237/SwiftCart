@@ -116,10 +116,14 @@ nav ul li a:hover::after {
   margin-top: 10px;
   padding: 8px 15px;
   border: none;
-  background: orange;
+  background: rgb(247, 162, 3);
   cursor: pointer;
 }
+.card button:hover {
 
+  background: rgb(255, 166, 0);
+  
+}
 .cart-title {
   text-align: center;
   margin: 30px;
@@ -192,6 +196,10 @@ nav ul li a:hover::after {
   background: orange;
   cursor: pointer;
 }
+.cart-actions button {
+  background: rgb(238, 158, 10);
+
+}
 
 .category-filter {
   text-align: center;
@@ -212,7 +220,7 @@ nav ul li a:hover::after {
   color: white;
 }
 /* ================= 📱 MOBILE FIX (≤375px) ================= */
-@media (max-width: 375px) {
+@media (max-width: 376px) {
 
   /* NAVBAR */
   .navbar {
@@ -274,17 +282,29 @@ nav ul li a:hover::after {
     width: 100%;
     margin: 5px 0;
   }
+ 
 
   /* PAGE TITLE */
   .page-title h1 {
     font-size: 20px;
     padding: 1rem;
   }
+
+
+
+  .plus{
+    padding: 3px 8px;
+    font-size: medium;
+    align-items: center;
+    position: relative;
+    /* left: 6rem; */
+    
+}
 }
 
 
 /* ================= 💻 TABLET (≤768px) ================= */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 
   .navbar {
     flex-direction: column;
@@ -322,7 +342,7 @@ nav ul li a:hover::after {
 
 
 /* ================= 🖥️ SMALL DESKTOP (≤1024px) ================= */
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
 
   .navbar {
     padding: 15px 30px;

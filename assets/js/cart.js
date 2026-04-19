@@ -63,6 +63,24 @@ cards.forEach((cart, index) => {
 });
 
 
+
+function clearCart() {
+  const confirmClear = confirm("Are you sure you want to clear all products?");
+
+  if (confirmClear) {
+    localStorage.removeItem("cart");
+    renderCart();
+  }
+}
+function confirmOrder() {
+   const confirmClear = confirm("Are you sure you want to place this order?");
+
+  if (confirmClear) {
+    localStorage.removeItem("cart");
+    renderCart();
+  }
+}
+
 //   const cart = JSON.parse(localStorage.getItem("cart")) || [];
 //   const cartContainer = document.getElementById("cart-container");
 //   if (!cartContainer) return;
