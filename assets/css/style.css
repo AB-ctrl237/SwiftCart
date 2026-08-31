@@ -526,10 +526,19 @@ display: none;
 }
 /* FOOTER */
 footer {
+
+  
   background: #232323;
   color: rgb(238, 155, 3);
   text-align: center;
   padding: 20px;
+}
+#dev{
+  /* position: relative;
+  top: 5px;
+  left: 30%; */
+  font-size: small;
+  color: white;
 }
 
 /* RESPONSIVE */
@@ -541,7 +550,7 @@ footer {
   .navbar {
     padding: 15px 30px;
       flex-direction: column;
-
+   flex-wrap: wrap;
   }
   .navbar-nav{
  flex-direction: column;
@@ -682,6 +691,7 @@ footer {
 
   .navbar {
     padding: 15px 30px;
+  
   }
 
   /* nav ul {

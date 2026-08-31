@@ -101,3 +101,7 @@ function confirmOrder() {
 // }
 
 // document.addEventListener("DOMContentLoaded", renderCart);
+
+
+
+
